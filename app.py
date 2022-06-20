@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from PIL import Image
+#from PIL import Image
 
 #load the model from disk
 import joblib
@@ -23,11 +23,11 @@ def main():
     st.markdown("<h3></h3>", unsafe_allow_html=True)
 
     #Setting Application sidebar default
-    image = Image.open('App.jpg')
+    #image = Image.open('App.jpg')
     add_selectbox = st.sidebar.selectbox(
 	"How would you like to predict?", ("Online", "Batch"))
     st.sidebar.info('This app is created to predict Titanic Survivals')
-    st.sidebar.image(image)
+    #st.sidebar.image(image)
 
     if add_selectbox == "Online":
         st.info("Input data below")
