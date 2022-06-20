@@ -6,7 +6,7 @@ import numpy as np
 
 #load the model from disk
 import joblib
-model = joblib.load(r"./notebook/model.sav")
+model = joblib.load("./notebook/model.sav")
 
 #Import python scripts
 from preprocessing import preprocess
